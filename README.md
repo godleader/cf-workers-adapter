@@ -1,15 +1,18 @@
-Cloudflare Worker Adapter
+# Cloudflare Worker Adapter
+
 This is a lightweight Cloudflare Workers adapter that enables projects to run independently without requiring the Cloudflare platform. It provides core features like:
 
-Parsing of TOML configuration files
-Support for multiple KV Namespace implementations
-Fetch API with proxy capabilities
-Installation
+- Parsing of TOML configuration files
+- Support for multiple KV Namespace implementations
+- Fetch API with proxy capabilities
+
+## Installation
+
 To add the package to your project, simply run:
 
-sh
-Copy code
+```bash
 npm install cloudflare-worker-adapter --save
+
 Usage Example
 typescript
 Copy code
