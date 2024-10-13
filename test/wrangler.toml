@@ -1,0 +1,33 @@
+# Here, change the name to the name of your workers
+name = "chatgpt-telegram-workers"
+compatibility_date = "2023-03-04"
+main = "./workers/server.js"
+workers_dev = true
+
+# The id field is required. Please fill in your kv namespace id
+# preview_id is only used during debugging, delete it if not needed
+kv_namespaces = [ { binding = "DATABASE", id = "", preview_id = "" } ]
+
+[vars]
+
+# For more parameter usage, please check the README.md
+# Parameters without comments are required fields
+# Options with parameters listed are the default values for that parameter
+# To use attributes with a # in front, remove the # symbol
+# All variables must be strings, and values for multiple parameters should be separated by commas
+
+# Basic Configuration
+API_KEY = "sk-"
+TELEGRAM_AVAILABLE_TOKENS = ""
+CHAT_WHITE_LIST = ""
+# I_AM_A_GENEROUS_PERSON = "false"
+# AUTO_TRIM_HISTORY = "false"
+# MAX_HISTORY_LENGTH = "20"
+# DEBUG_MODE = "false"
+# CHAT_MODEL = "gpt-3.5-turbo"
+
+# Group-related configuration
+# GROUP_CHAT_BOT_ENABLE = "true"
+# TELEGRAM_BOT_NAME = ""
+# GROUP_CHAT_BOT_SHARE_MODE = "false"
+# CHAT_GROUP_WHITE_LIST = "false"
