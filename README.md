@@ -36,6 +36,8 @@ async function handleRequest(req: Request) {
 
 // Initialize the server with the given configuration
 startServer(configuration.port, configuration.hostname, configuration.config, configuration.options, configuration.setting, handleRequest);
+```
+
 Overview
 The purpose of this project is to offer a simple Cloudflare Workers runtime, particularly for the AITG Bot or similar projects that need to operate independently of the Cloudflare platform. It provides basic functionality for integrating Cloudflare Worker features into any environment. More features will be introduced in the future to expand its capabilities. For additional details, refer to the AITG Bot project.
 
